@@ -1,8 +1,11 @@
 import "../App.css";
+import React from "react";
 
-function Main() {
+function Main(props) {
+  
+
   return (
-    <main className="main">
+    <main className={props.lightMode ? "main light" : "main dark"}>
       <div className="container">
         <h1>Fun facts about React</h1>
         <ul>
